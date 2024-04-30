@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meshcloud.</title>
+    <link rel="shortcut icon" href="./assets/cloud.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./assets/cloud.png" alt="" id="logo" />
+        <h2>Meshcloud.</h2>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="input-container">
+        <input type="text" id="location-value" placeholder="Lieu....." />
+        <button id="btn" onclick="getLocationData()">Voir</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item1 items">
+          <h1>
+            Faire une recherche
+          </h1>
+          <!-- <div id="loader"></div> -->
+          <!-- <div id="content">
+            <h2 id="location"></h2>
+            <div class="information">
+              <h3 id="temp-c"></h3>
+              <div>
+                <img id="weather-icon" alt="icon de soleil" />
+              </div>
+            </div>
+            <p id="description"></p>
+          </div> -->
+        </div>
+        <div class="grid-item2 items">
+          <img src="./assets/temperature.png" alt="icon de termometre" />
+        </div>
+        <div class="grid-item3 items">
+          <p>
+            "Chaque matin, je vérifie la météo pour savoir si je dois sortir le
+            parapluie ou les lunettes de soleil. Parce que, honnêtement, la
+            seule chose prévisible dans la météo, c'est son imprévisibilité ! 😄
+            #CheckMétéoEveryday"
+          </p>
+        </div>
+      </div>
+      <!-- <img src="" alt="soleil" id="weather-icon" /> -->
+    </div>
+  </body>
+</html>
