@@ -121,6 +121,9 @@ nav h2 {
   position: relative;
   background-image: url(./assets/mesh-gradient-1.png);
   background-size: cover;
+  display: flex;
+  justify-content: end;
+  overflow-y: hidden;
 }
 .grid-item2 > img {
   position: absolute;
@@ -128,8 +131,9 @@ nav h2 {
   width: 300px;
   /* top: -120px;
   left: 300px; */
-  top: -70%;
-  left: 50%;
+  /* top: -70%;
+  left: 50%; */
+ 
 }
 .grid-item3 {
   background-image: url(./assets/mesh-gradient-2.png);
@@ -154,3 +158,62 @@ nav h2 {
 }
 @keyframes l2 {to{transform: rotate(1turn)}}
 
+@media screen and (max-width:600px) {
+  nav{
+    justify-content: center;
+  }
+  nav h2{
+    font-size: 3rem;
+  }
+  .items{
+    height: 200px;
+  }
+  .grid-item2{
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-item2 > img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 0;
+  }
+  .grid-container{
+    /* grid-template-rows: repeat(3,1fr); */
+    grid-template-columns: 1fr;
+  }
+  .information{
+    gap: 0;
+    align-items: center;
+  }
+  .information #temp-c{
+    font-size: 4rem;
+  }
+  #weather-icon{
+    height: 100px;
+    width: 100px;
+  }
+  .grid-item1 #location{
+    font-size: 1.9rem;
+  }
+  .grid-item1 #location{
+    text-align: center;
+  }
+  .grid-item1{
+    grid-row: 1 / 2;
+  }
+  .grid-item3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item3 > p{
+    font-size: 1.3rem;
+  }
+  #description{
+    font-size: 1.5rem;
+  }
+}
